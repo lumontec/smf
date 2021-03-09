@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_MACROS_H
+#define SMF_MACROS_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -44,4 +50,6 @@ char (&smf_array_size_helper(T (&array)[N]))[N];
 #define SMF_NOINLINE __attribute__((__noinline__))
 #else
 #define SMF_NOINLINE
+#endif
+
 #endif

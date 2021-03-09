@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RPC_CONNECTION_H
+#define SMF_RPC_CONNECTION_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -78,3 +84,5 @@ class rpc_connection final {
   bool enabled_{true};
 };
 }  // namespace smf
+
+#endif

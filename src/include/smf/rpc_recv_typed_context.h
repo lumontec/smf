@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RPC_RECV_TYPED_CONTEXT_H
+#define SMF_RPC_RECV_TYPED_CONTEXT_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -38,10 +44,7 @@ class rpc_recv_typed_context {
     return *this;
   }
 
-  SMF_ALWAYS_INLINE T *
-  operator->() {
-    return cache_;
-  }
+  SMF_ALWAYS_INLINE T *operator->() { return cache_; }
   SMF_ALWAYS_INLINE T *
   get() const {
     return cache_;
@@ -76,3 +79,5 @@ class rpc_recv_typed_context {
   T *cache_ = nullptr;
 };
 }  // namespace smf
+
+#endif

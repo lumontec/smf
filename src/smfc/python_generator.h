@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_PYTHON_GENERATOR_H
+#define _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_PYTHON_GENERATOR_H
+
 // Copyright 2019 SMF Authors
 //
 #pragma once
@@ -49,3 +55,5 @@ class python_generator final : public generator {
 };
 
 }  // namespace smf_gen
+
+#endif

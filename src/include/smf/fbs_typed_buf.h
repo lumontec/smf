@@ -33,14 +33,8 @@ class fbs_typed_buf {
     cache_ = std::move(o.cache_);
     return *this;
   }
-  T *
-  operator->() const {
-    return cache_;
-  }
-  T &
-  operator*() const {
-    return *cache_;
-  }
+  T *operator->() const { return cache_; }
+  T &operator*() const { return *cache_; }
   T *
   get() const {
     return cache_;

@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RPC_SERVER_H
+#define SMF_RPC_SERVER_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -49,7 +55,7 @@ class rpc_server {
 
   template <typename T, typename... Args>
   void
-  register_service(Args &&...args) {
+  register_service(Args &&... args) {
     static_assert(std::is_base_of<rpc_service, T>::value,
                   "register_service can only be called with a derived class of "
                   "smf::rpc_service");
@@ -57,13 +63,13 @@ class rpc_server {
   }
   template <typename Function, typename... Args>
   void
-  register_incoming_filter(Args &&...args) {
+  register_incoming_filter(Args &&... args) {
     in_filters_.push_back(Function(std::forward<Args>(args)...));
   }
 
   template <typename Function, typename... Args>
   void
-  register_outgoing_filter(Args &&...args) {
+  register_outgoing_filter(Args &&... args) {
     out_filters_.push_back(Function(std::forward<Args>(args)...));
   }
 
@@ -134,3 +140,5 @@ class rpc_server {
 };
 
 }  // namespace smf
+
+#endif

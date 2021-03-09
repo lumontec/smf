@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_HUMAN_BYTES_H
+#define SMF_HUMAN_BYTES_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -39,3 +45,5 @@ operator<<(std::ostream &o, smf::human_bytes h) {
 }
 
 }  // namespace smf
+
+#endif

@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_LOAD_CHANNEL_H
+#define SMF_LOAD_CHANNEL_H
+
 // Copyright 2017 Alexander Gallego
 //
 #pragma once
@@ -82,3 +88,5 @@ struct load_channel {
 };
 
 }  // namespace smf
+
+#endif

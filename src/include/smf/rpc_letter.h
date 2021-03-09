@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RPC_LETTER_H
+#define SMF_RPC_LETTER_H
+
 // Copyright (c) 2017 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -36,3 +42,5 @@ struct rpc_letter {
 };
 
 }  // namespace smf
+
+#endif

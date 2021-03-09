@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RPC_TYPED_ENVELOPE_H
+#define SMF_RPC_TYPED_ENVELOPE_H
+
 // Copyright (c) 2017 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -45,3 +51,5 @@ struct rpc_typed_envelope {
   SMF_DISALLOW_COPY_AND_ASSIGN(rpc_typed_envelope);
 };
 }  // namespace smf
+
+#endif

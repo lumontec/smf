@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_UNIQUE_HISTOGRAM_ADDER_H
+#define SMF_UNIQUE_HISTOGRAM_ADDER_H
+
 // Copyright 2017 Alexander Gallego
 //
 
@@ -32,3 +38,5 @@ class unique_histogram_adder {
 };
 
 }  // namespace smf
+
+#endif

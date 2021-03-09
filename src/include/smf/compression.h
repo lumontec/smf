@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_COMPRESSION_H
+#define SMF_COMPRESSION_H
+
 // Copyright 2017 Alexander Gallego
 //
 
@@ -51,3 +57,5 @@ class codec {
 };
 
 }  // namespace smf
+
+#endif

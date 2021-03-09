@@ -97,12 +97,12 @@ def get_clang_prog(prog):
 
 
 def get_clang_format(options):
-    return get_clang_prog("clang-format")
+    return get_clang_prog("clang-format-8")
 
 
 def get_clang_tidy(options):
     if options.tidy == True:
-        clang_tidy = get_clang_prog("clang-tidy")
+        clang_tidy = get_clang_prog("clang-tidy-8")
         if not clang_tidy:
             raise Exception(
                 "error tried to run clang tidy but binary not found")

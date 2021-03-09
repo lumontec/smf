@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RPC_SERVER_STATS_H
+#define SMF_RPC_SERVER_STATS_H
+
 // Copyright 2018 SMF Authors
 //
 
@@ -19,3 +25,5 @@ struct rpc_server_stats {
 };
 
 }  // namespace smf
+
+#endif

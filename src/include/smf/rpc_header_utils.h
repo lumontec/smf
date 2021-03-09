@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RPC_HEADER_UTILS_H
+#define SMF_RPC_HEADER_UTILS_H
+
 // Copyright 2017 Alexander Gallego
 //
 
@@ -21,3 +27,5 @@ checksum_rpc(T &hdr, const char *payload, uint32_t size) {
 }
 
 }  // namespace smf
+
+#endif

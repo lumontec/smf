@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RPC_HEADER_OSTREAM_H
+#define SMF_RPC_HEADER_OSTREAM_H
+
 // Copyright (c) 2018 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -18,3 +24,5 @@ operator<<(ostream &o, const ::smf::rpc::header &h) {
   return o;
 }
 }  // namespace std
+
+#endif

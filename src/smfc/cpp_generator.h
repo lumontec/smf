@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_CPP_GENERATOR_H
+#define _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_CPP_GENERATOR_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -63,3 +69,5 @@ class cpp_generator : public generator {
 };
 
 }  // namespace smf_gen
+
+#endif

@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RPC_CONNECTION_LIMITS_H
+#define SMF_RPC_CONNECTION_LIMITS_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -43,3 +49,5 @@ operator<<(std::ostream &o, const ::smf::rpc_connection_limits &l) {
 }
 
 }  // namespace smf
+
+#endif

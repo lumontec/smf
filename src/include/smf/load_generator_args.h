@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_LOAD_GENERATOR_ARGS_H
+#define SMF_LOAD_GENERATOR_ARGS_H
+
 // Copyright 2017 Alexander Gallego
 //
 #pragma once
@@ -49,3 +55,5 @@ operator<<(std::ostream &o, const smf::load_generator_args &args) {
   return o;
 }
 }  // namespace std
+
+#endif

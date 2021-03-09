@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_HISTOGRAM_H
+#define SMF_HISTOGRAM_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -127,3 +133,5 @@ operator<<(std::ostream &o, const smf::histogram &h) {
     << "μs,p999=" << h.value_at(.999) << "μs}";
   return o;
 };
+
+#endif

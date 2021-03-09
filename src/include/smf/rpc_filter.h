@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RPC_FILTER_H
+#define SMF_RPC_FILTER_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -37,3 +43,5 @@ rpc_filter_apply(Container *c, Arg &&arg) {
 }
 
 }  // namespace smf
+
+#endif

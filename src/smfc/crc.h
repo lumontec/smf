@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_CRC_H
+#define _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_CRC_H
+
 // Copyright 2018 SMF Authors
 //
 
@@ -11,3 +17,5 @@ crc32(const char *data, const size_t &length) {
   return result.checksum();
 }
 }  // namespace smf_gen
+
+#endif

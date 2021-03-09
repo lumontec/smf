@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_NATIVE_TYPE_UTILS_H
+#define SMF_NATIVE_TYPE_UTILS_H
+
 // Copyright 2017 Alexander Gallego
 //
 
@@ -32,3 +38,5 @@ native_table_as_buffer(const typename RootType::NativeTableType &t) {
 }
 
 }  // namespace smf
+
+#endif

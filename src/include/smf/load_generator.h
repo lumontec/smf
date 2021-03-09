@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_LOAD_GENERATOR_H
+#define SMF_LOAD_GENERATOR_H
+
 // Copyright 2017 Alexander Gallego
 //
 #pragma once
@@ -117,3 +123,5 @@ class __attribute__((visibility("default"))) load_generator {
 };
 
 }  // namespace smf
+
+#endif

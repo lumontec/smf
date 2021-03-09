@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_SMF_PRINTER_H
+#define _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_SMF_PRINTER_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -82,3 +88,5 @@ class smf_printer {
   uint16_t indent_step_ = 2;
 };
 }  // namespace smf_gen
+
+#endif

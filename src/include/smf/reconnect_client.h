@@ -1,3 +1,6 @@
+#ifndef SMF_RECONNECT_CLIENT_H
+#define SMF_RECONNECT_CLIENT_H
+
 // Copyright 2019 SMF Authors
 //
 
@@ -127,3 +130,5 @@ operator<<(ostream &o, smf::reconnect_backoff b) {
            << "secs }";
 }
 }  // namespace std
+
+#endif

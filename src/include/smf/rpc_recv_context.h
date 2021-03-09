@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RPC_RECV_CONTEXT_H
+#define SMF_RPC_RECV_CONTEXT_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -59,3 +65,5 @@ struct rpc_recv_context {
   SMF_DISALLOW_COPY_AND_ASSIGN(rpc_recv_context);
 };
 }  // namespace smf
+
+#endif

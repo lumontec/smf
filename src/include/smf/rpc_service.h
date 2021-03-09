@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RPC_SERVICE_H
+#define SMF_RPC_SERVICE_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -41,3 +47,5 @@ struct rpc_service {
 // namespace std {
 // ostream &operator<<(ostream &o, const smf::rpc_service *s);
 // }  // namespace std
+
+#endif

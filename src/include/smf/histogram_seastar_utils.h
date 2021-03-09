@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_HISTOGRAM_SEASTAR_UTILS_H
+#define SMF_HISTOGRAM_SEASTAR_UTILS_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -27,3 +33,5 @@ struct histogram_seastar_utils {
 };
 
 }  // namespace smf
+
+#endif

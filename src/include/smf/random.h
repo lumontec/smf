@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_RANDOM_H
+#define SMF_RANDOM_H
+
 // Copyright 2017 Alexander Gallego
 //
 #pragma once
@@ -25,3 +31,5 @@ class random {
 };
 
 }  // namespace smf
+
+#endif

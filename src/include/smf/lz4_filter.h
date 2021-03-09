@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef SMF_LZ4_FILTER_H
+#define SMF_LZ4_FILTER_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -22,3 +28,5 @@ struct lz4_decompression_filter : rpc_filter<rpc_envelope> {
 };
 
 }  // namespace smf
+
+#endif

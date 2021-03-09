@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_GO_GENERATOR_H
+#define _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_GO_GENERATOR_H
+
 // Copyright 2018 SMF Authors
 //
 
@@ -52,3 +58,5 @@ class go_generator : public generator {
 };
 
 }  // namespace smf_gen
+
+#endif

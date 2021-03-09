@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_GENERATOR_H
+#define _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_GENERATOR_H
+
 // Copyright 2018 SMF Authors
 //
 
@@ -101,3 +107,5 @@ class generator {
   std::vector<std::unique_ptr<smf_service>> services_;
 };
 }  // namespace smf_gen
+
+#endif

@@ -1,3 +1,9 @@
+// Copyright 2021 SMF Authors
+//
+
+#ifndef _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_SMF_SERVICE_H
+#define _HOME_CRASH_DOCUMENTS_LOCAL_OSRC_SMF_SRC_SMFC_SMF_SERVICE_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -50,3 +56,5 @@ class smf_service {
   std::vector<std::unique_ptr<smf_method>> methods_;
 };
 }  // namespace smf_gen
+
+#endif

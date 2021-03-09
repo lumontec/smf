@@ -1,3 +1,6 @@
+#ifndef SMF_TIME_UTILS_H
+#define SMF_TIME_UTILS_H
+
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
@@ -47,3 +50,5 @@ time_as_iso_8601(uint64_t millisecs) {
          seastar::to_sstring(time_struct->tm_sec);
 }
 }  // namespace smf
+
+#endif
