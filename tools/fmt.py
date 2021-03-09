@@ -85,13 +85,13 @@ def get_clang_prog(prog):
     ret = subprocess.check_output("which %s" % prog, shell=True)
     if ret != None:
         original = "".join(str(ret).split())
-        if "".join(
-                str(
-                    subprocess.check_output(
-                        "%s --version | grep %s | awk \'{print $3}\'" %
-                        (original, CLANG_SOURCE_VERSION),
-                        shell=True)).split()) != CLANG_SOURCE_VERSION:
-            return None
+#        if "".join(
+#                str(
+#                    subprocess.check_output(
+#                        "%s --version | grep %s | awk \'{print $3}\'" %
+#                        (original, CLANG_SOURCE_VERSION),
+#                        shell=True)).split()) != CLANG_SOURCE_VERSION:
+#            return None
         return original
     return None
 

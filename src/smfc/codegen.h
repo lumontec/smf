@@ -3,9 +3,9 @@
 #pragma once
 
 #include <memory>
+#include <optional>
 #include <string>
 #include <vector>
-#include <optional>
 
 #include <flatbuffers/flatbuffers.h>
 #include <flatbuffers/idl.h>

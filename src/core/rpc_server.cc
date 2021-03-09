@@ -105,17 +105,17 @@ rpc_server::start() {
                        : seastar::ipv4_addr{args_.ip, args_.rpc_port}),
     lo);
   (void)seastar::keep_doing([this] {
-    return listener_->accept().then(
-      [this, stats = stats_, limits = limits_](
-       seastar::accept_result result) mutable {
-        auto conn = seastar::make_lw_shared<rpc_server_connection>(
-          std::move(result.connection), limits, result.remote_address, stats, ++connection_idx_);
+    return listener_->accept().then([this, stats = stats_, limits = limits_](
+                                      seastar::accept_result result) mutable {
+      auto conn = seastar::make_lw_shared<rpc_server_connection>(
+        std::move(result.connection), limits, result.remote_address, stats,
+        ++connection_idx_);
 
-        open_connections_.insert({connection_idx_, conn});
+      open_connections_.insert({connection_idx_, conn});
 
-        // DO NOT return the future. Need to execute in parallel
-        (void)handle_client_connection(conn);
-      });
+      // DO NOT return the future. Need to execute in parallel
+      (void)handle_client_connection(conn);
+    });
   }).handle_exception([this](std::exception_ptr eptr) {
     stopped_.set_value();
     try {

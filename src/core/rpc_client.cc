@@ -3,14 +3,14 @@
 #include "smf/rpc_client.h"
 
 #include <memory>
-#include <utility>
 #include <optional>
+#include <utility>
 // seastar
 #include <seastar/core/execution_stage.hh>
 #include <seastar/core/reactor.hh>
 #include <seastar/core/sleep.hh>
-#include <seastar/net/api.hh>
 #include <seastar/core/with_timeout.hh>
+#include <seastar/net/api.hh>
 // smf
 #include "smf/log.h"
 #include "smf/rpc_recv_context.h"
@@ -149,7 +149,7 @@ rpc_client::connect() {
         seastar::make_lw_shared<rpc_connection>(std::move(fd), local, limits_);
       // dispatch in background
       (void)seastar::with_gate(*dispatch_gate_,
-                         [this]() mutable { return do_reads(); });
+                               [this]() mutable { return do_reads(); });
       return seastar::make_ready_future<>();
     });
 }

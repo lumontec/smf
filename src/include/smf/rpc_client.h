@@ -3,19 +3,19 @@
 #pragma once
 // std
 #include <memory>
+#include <optional>
 #include <utility>
 #include <vector>
-#include <optional>
 
-#include <seastar/core/gate.hh>
-#include <seastar/core/shared_ptr.hh>
-#include <seastar/net/api.hh>
 #include "smf/histogram.h"
 #include "smf/macros.h"
 #include "smf/rpc_connection.h"
 #include "smf/rpc_envelope.h"
 #include "smf/rpc_filter.h"
 #include "smf/rpc_recv_typed_context.h"
+#include <seastar/core/gate.hh>
+#include <seastar/core/shared_ptr.hh>
+#include <seastar/net/api.hh>
 
 namespace smf {
 

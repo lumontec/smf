@@ -38,7 +38,10 @@ class rpc_recv_typed_context {
     return *this;
   }
 
-  SMF_ALWAYS_INLINE T *operator->() { return cache_; }
+  SMF_ALWAYS_INLINE T *
+  operator->() {
+    return cache_;
+  }
   SMF_ALWAYS_INLINE T *
   get() const {
     return cache_;

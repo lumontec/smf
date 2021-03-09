@@ -4,9 +4,9 @@
 #pragma once
 #include <map>
 #include <memory>
+#include <optional>
 #include <set>
 #include <string>
-#include <optional>
 
 #include <boost/filesystem.hpp>
 #include <flatbuffers/flatbuffers.h>

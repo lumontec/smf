@@ -1,8 +1,8 @@
 // Copyright (c) 2016 Alexander Gallego. All rights reserved.
 //
 #pragma once
-#include <utility>
 #include <optional>
+#include <utility>
 // seastar
 #include <seastar/core/iostream.hh>
 #include <seastar/core/shared_ptr.hh>
